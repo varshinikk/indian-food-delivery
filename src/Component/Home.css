@@ -1,0 +1,72 @@
+#div1
+{
+    background-image: url("../Image/logo.png");
+	background-size: cover;
+	color: white;
+}
+.logo
+{
+    height: 103px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 99px;
+    margin-left: 50px;
+}
+.btn1
+{
+    border: 1px solid cyan;
+    border-radius: 6px;
+    height: 40px;
+    width: 91px;
+    /* margin-left: 145px; */
+    margin-top: 31px;
+    background-color: cyan;
+    color: darkblue;
+}
+.btn2
+{
+    border: 1px solid cyan;
+    border-radius: 6px;
+    height: 40px;
+    width: 91px;
+    /* margin-left: 70px; */
+    margin-top: 31px;
+    background-color: cyan;
+    color: darkblue;
+}
+.label1
+{
+    margin-left: 78px;
+    font-size: 35px;
+    color: darkgreen;
+}
+.ip1
+{
+    margin-top: 35px;
+    margin-left: 17px;
+    height: 38px;
+    width: 240px;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+.label2
+{
+    margin-left: 78px;
+    font-size: 35px;
+    color: darkgreen;
+}
+.ip2
+{
+    margin-top: 35px;
+    margin-left: 17px;
+    height: 38px;
+    width: 240px;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+.p1
+{
+    color: black;
+    font-size: 18px;
+    margin-top: 51px;
+}
