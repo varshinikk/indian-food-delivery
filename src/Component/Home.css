@@ -1,8 +1,8 @@
 #div1
 {
-    background-image: url("../Image/logo.png");
-	background-size: cover;
-	color: white;
+    background-color: #FAE5D3;
+    background-image: url("../Image/back1.jpg");
+    background-size: cover;
 }
 .logo
 {
@@ -14,29 +14,29 @@
 }
 .btn1
 {
-    border: 1px solid cyan;
+    border: 1px solid darkgreen;
     border-radius: 6px;
     height: 40px;
     width: 91px;
-    /* margin-left: 145px; */
+    font-size: 15px;
     margin-top: 31px;
-    background-color: cyan;
-    color: darkblue;
+    background-color:darkgreen;
+    color: white;
 }
 .btn2
 {
-    border: 1px solid cyan;
+    border: 1px solid darkgreen;
     border-radius: 6px;
     height: 40px;
     width: 91px;
-    /* margin-left: 70px; */
+    font-size: 15px;
     margin-top: 31px;
-    background-color: cyan;
-    color: darkblue;
+    background-color:darkgreen;
+    color: white;
 }
 .label1
 {
-    margin-left: 78px;
+    margin-left: 215px;
     font-size: 35px;
     color: darkgreen;
 }
@@ -46,27 +46,90 @@
     margin-left: 17px;
     height: 38px;
     width: 240px;
-    border: 1px solid black;
-    border-radius: 12px;
-}
-.label2
-{
-    margin-left: 78px;
-    font-size: 35px;
-    color: darkgreen;
+    border: 1px solid darkgreen;
+    border-radius: 12px 0px 0px 12px;
 }
 .ip2
 {
     margin-top: 35px;
-    margin-left: 17px;
     height: 38px;
-    width: 240px;
-    border: 1px solid black;
-    border-radius: 12px;
+    border: 1px solid darkgreen;
+    background-color: darkgreen;
+    border-radius: 0px 17px 17px 0px;
+    width: 73px;
 }
 .p1
 {
     color: black;
     font-size: 18px;
+    font-style: italic;
+    margin-top: 10px;
+}
+.head
+{
+    color: black;
+    font-style: italic;
     margin-top: 51px;
+}
+.pic1
+{
+    height: 160px;
+    margin-top: 67px;
+    width: 250px;
+}
+.pic2
+{
+    height: 160px;
+    margin-top: 67px;
+    width: 250px;
+}
+.pic3
+{
+    height: 160px;
+    margin-top: 67px;
+    width: 250px;
+}
+/* .pic7, .pic8, .pic9
+{
+    height: 117px;
+    width: 205px;
+    margin-top: 35px;
+} */
+.pic4
+{
+    margin-top: 35px;
+    height: 50%;
+    width: 100%;
+}
+.dropdown 
+{
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content 
+{
+	display: none;
+	position: absolute;
+	z-index: 0;
+	background-color:#d81563;
+    color: white;
+    height: 15px;
+    width: 50px;
+    margin-top: 10px;
+}
+.dropdown:hover .dropdown-content
+{
+    display: block;
+    display: block;
+    height: 31px;
+    width: 250px;
+    margin-top: -32px;
+    font-size: 18px;
+    font-style: italic;
+}
+.slider
+{
+    height: 220px;
+    width: 365px;
 }

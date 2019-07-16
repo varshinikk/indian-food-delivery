@@ -1,0 +1,39 @@
+#box2
+{
+    background-image: url("../Image/back1.jpg");
+    background-size: cover;
+    height: 637px;
+}
+.heading2
+{
+    margin-top: 81px;
+    font-size: 42px;
+}
+.label6, .label7
+{
+    font-size: 18px;
+}
+.ip7
+{
+    margin-top: 54px;
+    margin-left: 2px;
+    width: 265px;
+    height: 35px;
+}
+.ip8
+{
+    margin-left: 46px;
+    width: 265px;
+    height: 35px;
+}
+.btn4
+{
+    border: 1px solid darkgreen;
+    background-color: darkgreen;
+    border-radius: 8px;
+    color: white;
+    height: 41px;
+    width: 95px;
+    font-size: 22px;
+    /* margin-left: 203px; */
+}

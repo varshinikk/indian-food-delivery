@@ -1,0 +1,22 @@
+#body
+{
+	background-image: url("../Image/back1.jpg");
+    background-size: cover;
+    height: 637px;
+}
+.heading3
+{
+    margin-top: 10px;
+	font-size: 42px;
+	color:black;
+}
+.heading4, .heading5, .heading6
+{
+    font-size: 30px;
+    color: red;
+    margin-top: 10px;
+}
+.p2, .p3, .p4, .p5, .p6, .p7
+{
+    font-size: 17px;
+}

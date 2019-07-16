@@ -1,0 +1,50 @@
+#box1
+{
+    background-image: url("../Image/back1.jpg");
+    background-size: cover;
+    height: 637px;
+}
+.heading1
+{
+    margin-top: 81px;
+    font-size: 42px;
+}
+.label2, .label3, .label4, .label5
+{
+    font-size: 18px;
+}
+.ip3
+{
+    margin-top: 54px;
+    margin-left: 81px;
+    width: 265px;
+    height: 35px;
+}
+.ip4
+{
+    margin-left: 2px;
+    height: 35px;
+    width: 265px;
+}
+.ip5
+{
+    height: 35px;
+    width: 265px;
+    margin-left: 83px;
+}
+.ip6
+{
+    height: 35px;
+    width: 265px;
+    margin-left: 46px;
+}
+.btn3
+{
+    border: 1px solid darkgreen;
+    background-color: darkgreen;
+    border-radius: 8px;
+    color: white;
+    height: 41px;
+    width: 95px;
+    font-size: 22px;
+}
