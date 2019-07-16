@@ -4,6 +4,7 @@ import browserHistory from '../Utils/browserHistory';
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
 "mdbreact";
 
+
 class Home extends Component {
 
 handlepress = () => {
@@ -35,9 +36,9 @@ handleclick = () => {
             </div>
           </div>
           <div class="row">
-          <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
-          <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
-            <MDBContainer>
+          {/* <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div> */}
+          <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+            {/* <MDBContainer>
               <MDBCarousel activeItem={1} length={3} showControls={true} showIndicators={false} className="z-depth-1">
               <MDBCarouselInner>
               <MDBCarouselItem itemId="1">
@@ -57,9 +58,44 @@ handleclick = () => {
               </MDBCarouselItem>
               </MDBCarouselInner>
               </MDBCarousel>
-            </MDBContainer>
+            </MDBContainer> */}
+
+<div class="">
+  <h2>Carousel Example</h2>  
+  <div id="myCarousel" className="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div className="carousel-inner">
+      <div className="item active">
+        <img src={require('../Image/slide1.jpeg')} alt="Los Angeles"/>
+      </div>
+
+      <div className="item">
+        <img src={require('../Image/slide2.jpeg')} alt="Chicago"/>
+      </div>
+    
+      <div className="item">
+        <img src={require('../Image/slide3.jpeg')} alt="New york"/>
+      </div>
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
           </div>
-          <div class="col-sm-2 col-lg-2 col-md-2 col-xs-2"></div>
+          {/* <div class="col-sm-2 col-lg-2 col-md-2 col-xs-2"></div> */}
           </div>
           <div class="row">
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
