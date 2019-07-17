@@ -1,0 +1,30 @@
+.logo1
+{
+    width: 64px;
+    margin-left: 15px;
+}
+.nav-link
+{
+    font-size: 20px;
+    margin-left: 20px;
+    color: black;
+}
+.ip9
+{
+    height: 34px;
+    width: 223px;
+    margin-left: 25px;
+    border: 1px solid white;
+    border-radius: 7px;
+    font-size: 15px;
+}
+.btn6
+{
+    height: 34px;
+    width: 71px;
+    font-size: 15px;
+    margin-left: 3px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 6px;
+}

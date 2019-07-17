@@ -1,0 +1,52 @@
+#div4
+{
+    background-color: #FAE5D3;
+    background-image: url("../Image/back1.jpg");
+    background-size: cover;
+}
+#mySidenav a
+{
+    position: absolute;
+    padding: 15px;
+    width: 213px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+#restaurants
+{
+    /* top:100px; */
+    background-color: #BB8FCE;
+    width: 213px;
+}
+#offer 
+{
+    top:70px;
+    background-color: #BB8FCE;
+    width: 213px;
+}  
+#all
+{
+    top: 140px;
+    background-color: #BB8FCE;
+    width: 213px;
+}
+.div5
+{
+    height: 225px;
+}
+.hotel1
+{
+    height: 181px;
+    width: 224px;
+} 
+.hotel4
+{
+    height: 181px;
+    width: 224px;
+}
+.card1, .div6
+{
+    margin-top: 35px;
+}
