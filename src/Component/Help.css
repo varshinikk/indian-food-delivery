@@ -1,22 +1,25 @@
 #body
 {
-	background-image: url("../Image/back1.jpg");
+	background-image: url("../Image/back3.jpg");
     background-size: cover;
-    height: 637px;
+    height: 640px;
 }
 .heading3
 {
     margin-top: 10px;
 	font-size: 42px;
-	color:black;
+    color:black;
+    font-style: italic;
 }
 .heading4, .heading5, .heading6
 {
-    font-size: 30px;
+    font-size: 32px;
     color: red;
     margin-top: 10px;
+    font-style: italic;
 }
 .p2, .p3, .p4, .p5, .p6, .p7
 {
     font-size: 17px;
+    color: black;
 }

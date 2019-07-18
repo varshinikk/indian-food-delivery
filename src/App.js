@@ -6,6 +6,9 @@ import Signin from './Component/Signin';
 import Help from './Component/Help';
 import Navbar from './Component/Navbar';
 import Dashboard from './Component/Dashboard';
+import Offer from './Component/Offer';
+import Address from './Component/Address';
+import Footer from './Component/Footer';
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
           <Route exact path="/help" component={Help}></Route>
           <Route exact path="/navbar" component={Navbar}></Route>
           <Route exact path="/dashboard" component={Dashboard}></Route>
+          <Route exact path="/offer" component={Offer}></Route>
+          <Route exact path="/address" component={Address}></Route>
+          <Route exact path="/footer" component={Footer}></Route>
         </switch>
       </Router>
     </div>

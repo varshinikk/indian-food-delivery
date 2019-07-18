@@ -1,0 +1,52 @@
+#div6
+{
+    background-color: #FAE5D3;
+    background-image: url("../Image/back2.jpg");
+    background-size: cover;
+}
+.food2
+{
+    height: 158px;
+    width: 320px;
+}
+.card2
+{
+    margin-left: 15px;
+    width: 350px;
+}
+.card3
+{
+    margin-left: 8px;
+    width: 350px;
+}
+.head6
+{
+    font-size: 39px;
+    margin-top: 37px;
+    color: #17202A  ;
+}
+.row1
+{
+    margin-top: 50px;
+}
+.row2
+{
+    margin-top: 40px;
+}
+.head7
+{
+    margin-top: 13px;
+    font-size: 22px;
+    font-style: italic;
+    color: #17202A;
+}
+.head8
+{
+    font-size: 18px;
+    font-style: italic;
+    color: slategray;
+}
+.card-body
+{
+    background-color: #E5E7E9;
+}

@@ -1,0 +1,33 @@
+#div7
+{
+    background-image: url("../Image/back5.jpg");
+    background-size: cover;
+    height: 640px;
+}
+.ip11
+{
+    margin-left: 11px;
+    height: 30px;
+    width: 290px;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-top: 50px;
+}
+.ip12
+{
+    margin-left: 49px;
+    height: 30px;
+    width: 290px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.head9
+{
+    font-size: 37px;
+    margin-top: 100px;
+    color: darkgreen;
+}
+.label13, .label14
+{
+    font-size: 24px;
+}

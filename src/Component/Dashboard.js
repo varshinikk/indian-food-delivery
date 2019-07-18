@@ -5,9 +5,14 @@ import Navbar from './Navbar'
 class Dashboard extends Component {
     render() {
         return (
-            // <div><Navbar/></div>
             <div id="div4">
+                {/* <div><Navbar/></div> */}
                 <div class="container">
+                <div class="row">
+                <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12 nav">
+                    <Navbar/>
+                </div>
+                </div>
                 <div class="row">
                 <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3 div5">
                     <div id="mySidenav" class="sidenav">
