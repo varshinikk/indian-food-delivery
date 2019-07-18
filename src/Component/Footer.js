@@ -11,11 +11,25 @@ class Footer extends Component {
                     <img className="logo2" src={require('../Image/logo1.png')} alt="no image"></img>
                 </div>
                 <div class="col-sm-5 col-lg-5 col-md-5 col-xs-5">
-                    <p>Contact Us: indianfood@gmail.com</p>
+                    <p className="p10">Contact Us: indianfood@gmail.com</p>
                 </div>
-                <div class="col-sm-5 col-lg-5 col-md-5 col-xs-5">
-
+                <div class="col-sm-2 col-lg-2 col-md-2 col-xs-2">
+                    <p className="p10">Follow Us On</p>
                 </div>
+                <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-facebook-square"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-youtube-play"></i>
+                </div>
+                </div>
+                <hr></hr>
+                <div class="row">
+                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
+                <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+                    <p className="p11">@ 2019 Copyright - All Rights Reserved</p>
+                </div>
+                <div class="col-sm-5 col-lg-5 col-md-5 col-xs-5"></div>
                 </div>
                 </div>
             </div>

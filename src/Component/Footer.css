@@ -1,4 +1,23 @@
+#div8
+{
+    background-color: #566573;
+}
 .logo2
 {
     height: 50px;
+}
+hr
+{
+    background-color:white;
+}
+.p10
+{
+    font-size: 20px;
+    color: white;
+    margin-top: 7px;
+}
+.p11
+{
+    font-size: 14px;
+    color: white;
 }
