@@ -8,16 +8,17 @@ class Signup extends Component{
     return(
       <div id="box1">
         <div class="container">
-          <div class="row">
+          {/* <div class="row">
           <div class="col-sm-5 col-lg-5 col-md-5 col-xs-5"></div>
           <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
             <h1 className="heading1">Signup</h1>
           </div>
           <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div> 
-          </div>
-          <div class="row">
+          </div> */}
+          <div class="row signup">
           <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3"></div>  
           <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
+            <center><h1 className="heading1">Signup</h1></center>
             <label className="label2"><b>Name</b></label>
             <input className="ip3" type="text" name="name"></input><br></br><br></br>
             <label className="label3"><b>Phone Number</b></label>
@@ -26,7 +27,7 @@ class Signup extends Component{
             <input className="ip5" type="text" name="email"></input><br></br><br></br>
             <label className="label5"><b>Password</b></label>
             <input className="ip6" type="password" name="password"></input><br></br><br></br> 
-            <button className="btn3">Signin</button>
+            <center><button className="btn3">Signin</button></center>
           </div>
           <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3"></div> 
           </div>

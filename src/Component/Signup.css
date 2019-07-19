@@ -6,7 +6,6 @@
 }
 .heading1
 {
-    margin-top: 81px;
     font-size: 42px;
     color: white;
 }
@@ -50,11 +49,15 @@
 }
 .btn3
 {
-    border: 1px solid darkgreen;
+    border: 1px solid white;
     background-color: darkgreen;
     border-radius: 8px;
     color: white;
     height: 41px;
     width: 95px;
     font-size: 22px;
+}
+.signup
+{
+    margin-top: 81px;
 }

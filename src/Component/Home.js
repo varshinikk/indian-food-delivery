@@ -21,12 +21,13 @@ class Home extends Component {
             <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
               <img className="logo" src={require('../Image/logo1.png')} alt="no image"></img>
             </div>
-            <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+            <div class="col-sm-2 col-lg-2 col-md-2 col-xs-2">
               <button className="btn1" onClick={this.handlepress}>Signup</button>
             </div>
-            <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+            <div class="col-sm-1 col-lg-1 col-md-1 col-xs-1">
               <button className="btn2" onClick={this.handleclick}>Signin</button>
             </div>
+            <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3"></div>
           </div>
           <div class="row">
             <div id="loc" class="col-sm-12 col-lg-12 col-md-12 col-xs-12">

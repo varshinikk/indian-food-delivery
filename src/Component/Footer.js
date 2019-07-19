@@ -17,10 +17,10 @@ class Footer extends Component {
                     <p className="p10">Follow Us On</p>
                 </div>
                 <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
-                    <i class="fa fa-instagram"></i>
-                    <i class="fa fa-facebook-square"></i>
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-youtube-play"></i>
+                    <i class="fa fa-instagram icon1"></i>
+                    <i class="fa fa-facebook-square icon2"></i>
+                    <i class="fa fa-twitter icon3"></i>
+                    <i class="fa fa-youtube-play icon4"></i>
                 </div>
                 </div>
                 <hr></hr>

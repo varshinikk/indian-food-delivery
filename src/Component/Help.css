@@ -1,20 +1,21 @@
 #body
 {
-	background-image: url("../Image/back3.jpg");
-    background-size: cover;
+	/* background-image: url("../Image/back3.jpg");
+    background-size: cover; */
+    background-color: #D1F2EB;
     height: 640px;
 }
 .heading3
 {
     margin-top: 10px;
 	font-size: 42px;
-    color:black;
+    color:darkmagenta;
     font-style: italic;
 }
 .heading4, .heading5, .heading6
 {
     font-size: 32px;
-    color: red;
+    color: darkmagenta;
     margin-top: 10px;
     font-style: italic;
 }
@@ -22,4 +23,5 @@
 {
     font-size: 17px;
     color: black;
+    font-style: italic;
 }

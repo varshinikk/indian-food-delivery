@@ -1,6 +1,6 @@
 #div8
 {
-    background-color: #566573;
+    background-color: #E5E7E9;
 }
 .logo2
 {
@@ -8,16 +8,43 @@
 }
 hr
 {
-    background-color:white;
+    background-color:black;
 }
 .p10
 {
     font-size: 20px;
-    color: white;
+    color: black;
     margin-top: 7px;
 }
 .p11
 {
     font-size: 14px;
-    color: white;
+    color: black;
+}
+.icon1
+{
+    font-size: 24px;
+    color: deeppink;
+    margin-top: 7px;
+}
+.icon2
+{
+    font-size: 24px;
+    color: rgb(67, 81, 122);
+    margin-top: 7px;
+    margin-left: 5px;
+}
+.icon3
+{
+    font-size: 24px;
+    color: #85C1E9;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+.icon4
+{
+    font-size: 24px;
+    color: red;
+    margin-top: 7px;
+    margin-left: 5px;
 }
