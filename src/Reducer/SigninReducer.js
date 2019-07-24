@@ -1,7 +1,7 @@
 import * as ActionTypes from '../Actions/type';
 
 const intialState = {
-    phone_number:'',
+    email:'',
     password:''
 };
 
