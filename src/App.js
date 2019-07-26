@@ -9,6 +9,7 @@ import Dashboard from './Component/Dashboard';
 import Offer from './Component/Offer';
 import Address from './Component/Address';
 import Footer from './Component/Footer';
+import Restaurant from './Component/Restaurant';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/offer" component={Offer}></Route>
           <Route exact path="/address" component={Address}></Route>
           <Route exact path="/footer" component={Footer}></Route>
+          <Route exact path="/restaurant" component={Restaurant}></Route>
         </switch>
       </Router>
     </div>

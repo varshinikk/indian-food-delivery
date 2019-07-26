@@ -91,7 +91,7 @@ class Offer extends Component {
                         <center><h3 className="head7">Paneer Butter Masala</h3></center>
                         <h3 className="head8">Cost = Rs.130</h3>
                         <h3 className="head8">Offer = 18%</h3> 
-                        <h3 className="head8">Delivery Charges = Rs.25</h3> 
+                        <h3 className="head8">Delivery Charges = Rs.15</h3> 
                     </div>
                     </div>
                 </div>

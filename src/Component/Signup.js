@@ -28,7 +28,6 @@ class Signup extends Component {
   handleSubmit= (event) =>{
     debugger;
     event.preventDefault();
-    // const {name, email, phone_number, password} = this.state;
     const user = {
       name: this.state.name,
       phone_number: this.state.phone_number,
@@ -37,9 +36,7 @@ class Signup extends Component {
     }
     console.log(user)
     signup(user).then(res => {
-      // if(name && email && phone_number && password){
-      browserHistory.push('/signin')
-    // }
+      // browserHistory.push('/signin')
     })
 
   // }

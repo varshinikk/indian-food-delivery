@@ -15,17 +15,23 @@ class Dashboard extends Component {
                 </div>
                 <div class="row">
                 <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3 div5">
-                    <div id="mySidenav" class="sidenav">
+                    {/* <div id="mySidenav" class="sidenav">
                         <a href="#" id="restaurants"> Popular Restaurants</a>
                         <a href="#" id="offer">Offers</a>
                         <a href="#" id="all">All Restaurants</a>
+                    </div> */}
+                    <div class="sidebar">
+                        <a class="active" href="#">Popular Restaurants</a>
+                        <a href="./Offer">Offers</a>
+                        <a href="./Restaurant">All Restaurants</a>
                     </div>
                 </div>
                 <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
                     <div class="card" >
                     <div class="card-body">
                         <img className="hotel1" src={require('../Image/hotel1.jpeg')} alt="no image" /><br />
-                        <h3>Infinit</h3>
+                        <center><h3>Infinit</h3></center>
+                        <center><h3 className="loc">Mysore</h3></center>
                     </div>
                     </div>
                 </div>
@@ -33,15 +39,17 @@ class Dashboard extends Component {
                     <div class="card" >
                     <div class="card-body">
                         <img className="hotel1" src={require('../Image/hotel2.jpg')} alt="no image" /><br />
-                        <h3>Sagar Ratna</h3>
+                        <center><h3>Sagar Ratna</h3></center>
+                        <center><h3 className="loc">Mangalore</h3></center>
                     </div>
                     </div>
                 </div>
                 <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
                     <div class="card" >
                     <div class="card-body">
-                        <img className="hotel1" src={require('../Image/hotel3.jpg')} alt="no image" /><br />
-                        <h3>Tapri By The Corner</h3>
+                        <img className="hotel1" src={require('../Image/hotel3.jpeg')} alt="no image" /><br />
+                        <center><h3>The Royal Afghan</h3></center>
+                        <center><h3 className="loc">Bangalore</h3></center>
                     </div>   
                     </div>
                 </div>
@@ -52,15 +60,17 @@ class Dashboard extends Component {
                 <div class="card card1" >
                     <div class="card-body">
                         <img className="hotel4" src={require('../Image/hotel5.jpeg')} alt="no image" /><br />
-                        <h3>Sandesh The Prince</h3>
+                        <center><h3>Frosting</h3></center>
+                        <center><h3 className="loc">Mysore</h3></center>
                     </div>   
-                    </div>
+                </div>
                 </div>
                 <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
                 <div class="card card1" >
                     <div class="card-body">
                         <img className="hotel4" src={require('../Image/hotel6.jpeg')} alt="no image" /><br />
-                        <h3>Maharaja Family Restaurant</h3>
+                        <center><h3>Maharaja Family Restaurant</h3></center>
+                        <center><h3 className="loc">Mangalore</h3></center>
                     </div>   
                     </div>
                 </div>
@@ -68,7 +78,8 @@ class Dashboard extends Component {
                 <div class="card card1" >
                     <div class="card-body">
                         <img className="hotel4" src={require('../Image/hotel4.jpg')} alt="no image" /><br />
-                        <h3>La Brasserie Restaurant</h3>
+                        <center><h3>La Brasserie Restaurant</h3></center>
+                        <center><h3 className="loc">Bangalore</h3></center>
                     </div>   
                     </div>
                 </div>
@@ -79,6 +90,3 @@ class Dashboard extends Component {
     }
 }
 export default Dashboard;
-
-
-

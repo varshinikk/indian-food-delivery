@@ -3,8 +3,9 @@
     background-color: #FAE5D3;
     background-image: url("../Image/back1.jpg");
     background-size: cover;
+    height: 680px;
 }
-#mySidenav a
+/* #mySidenav a
 {
     position: absolute;
     padding: 15px;
@@ -13,10 +14,9 @@
     font-size: 20px;
     color: white;
     border-radius: 0 5px 5px 0;
-}
-#restaurants
+} */
+/* #restaurants
 {
-    /* top:100px; */
     background-color: #BB8FCE;
     width: 213px;
 }
@@ -31,7 +31,7 @@
     top: 140px;
     background-color: #BB8FCE;
     width: 213px;
-}
+} */
 .div5
 {
     height: 225px;
@@ -53,4 +53,63 @@
 .nav
 {
     height: 114px;
+}
+.sidebar
+{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: absolute;
+    height: 100%;
+    overflow: auto;
+    height: 225px;
+    font-size: 20px;
+    width: 215px
+}
+.sidebar a
+{
+    display: block;
+    color: black;
+    padding: 16px;  
+}
+.sidebar a.active
+{
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #4CAF50;
+ } 
+.sidebar a:hover:not(.active) {
+    background-color: #A9DFBF;
+    color: darkgreen;
+    text-decoration: underline;
+    text-decoration-color: #A9DFBF;
+}  
+div.content
+{
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}  
+@media screen and (max-width: 700px)
+{
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+}  
+@media screen and (max-width: 400px)
+{
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+}
+.loc
+{
+    color: slategray;
 }
