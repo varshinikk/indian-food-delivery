@@ -13,6 +13,9 @@ class Home extends Component {
   handleclick = () => {
     browserHistory.push('/signin');
   }
+  handlesubmit = () => {
+    browserHistory.push('/dashboard');
+  }
   render() {
     return (
       <div id="div1">
@@ -32,9 +35,16 @@ class Home extends Component {
           <div class="row">
             <div id="loc" class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
               <label className="label1"><b>Location</b></label>
-              <input className="ip1" type="text" name="location"></input>
+              {/* <input className="ip1" type="text" name="location"></input> */}
               {/* <input className="ip2" type="text" name="search" placeholder="Search.."></input> */}
-              <button className="ip2" type="submit">Search</button>
+
+              <select className="select">
+                <option value="5d3eb95a4b6ad714873af370">Mysore</option>
+                <option value="5d3e990053d79425d96236d5">Bangalore</option>
+                <option value="5d3eb97b4b6ad714873af371">Mangalore</option>
+              </select>
+
+              <button className="ip2" type="submit" onClick={this.handlesubmit}>Search</button>
             </div>
           </div>
           <div class="row">

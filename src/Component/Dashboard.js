@@ -38,8 +38,8 @@ class Dashboard extends Component {
                 <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
                     <div class="card" >
                     <div class="card-body">
-                        <img className="hotel1" src={require('../Image/hotel2.jpg')} alt="no image" /><br />
-                        <center><h3>Sagar Ratna</h3></center>
+                        <img className="hotel1" src={require('../Image/hotel2.jpeg')} alt="no image" /><br />
+                        <center><h3>Gajalee Sea Food</h3></center>
                         <center><h3 className="loc">Mangalore</h3></center>
                     </div>
                     </div>
@@ -69,7 +69,7 @@ class Dashboard extends Component {
                 <div class="card card1" >
                     <div class="card-body">
                         <img className="hotel4" src={require('../Image/hotel6.jpeg')} alt="no image" /><br />
-                        <center><h3>Maharaja Family Restaurant</h3></center>
+                        <center><h3>Sannadige</h3></center>
                         <center><h3 className="loc">Mangalore</h3></center>
                     </div>   
                     </div>
@@ -77,8 +77,8 @@ class Dashboard extends Component {
                 <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
                 <div class="card card1" >
                     <div class="card-body">
-                        <img className="hotel4" src={require('../Image/hotel4.jpg')} alt="no image" /><br />
-                        <center><h3>La Brasserie Restaurant</h3></center>
+                        <img className="hotel4" src={require('../Image/hotel4.jpeg')} alt="no image" /><br />
+                        <center><h3>Saffron</h3></center>
                         <center><h3 className="loc">Bangalore</h3></center>
                     </div>   
                     </div>

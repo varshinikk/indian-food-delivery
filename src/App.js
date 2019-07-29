@@ -10,6 +10,7 @@ import Offer from './Component/Offer';
 import Address from './Component/Address';
 import Footer from './Component/Footer';
 import Restaurant from './Component/Restaurant';
+import Hotel1 from './Component/Hotel1';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/address" component={Address}></Route>
           <Route exact path="/footer" component={Footer}></Route>
           <Route exact path="/restaurant" component={Restaurant}></Route>
+          <Route exact path="/hotel1" component={Hotel1}></Route>
         </switch>
       </Router>
     </div>
