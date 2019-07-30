@@ -1,12 +1,24 @@
 import React, { Component } from 'react';
 import './Home.css'
 import browserHistory from '../Utils/browserHistory';
-import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
-  "mdbreact";
+// import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
+//   "mdbreact";
 
 
 class Home extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      place: ""
+    };
+  }
+
+  // handlechange = (event) => {
+  //   this.setState({
+  //   [event.target.place]: event.target.place
+  //   });
+  // }
   handlepress = () => {
     browserHistory.push('/signup');
   }
@@ -14,8 +26,9 @@ class Home extends Component {
     browserHistory.push('/signin');
   }
   handlesubmit = () => {
-    browserHistory.push('/dashboard');
+    browserHistory.push({ pathname:'/dashboard',state:{place:this.state.place}});
   }
+
   render() {
     return (
       <div id="div1">
@@ -57,13 +70,13 @@ class Home extends Component {
                 </ol>
                 <div className="carousel-inner">
                   <div className="item active">
-                    <img className="slide1" src={require('../Image/breakfast.jpg')} alt="Los Angeles" />
+                    <img className="slide1" src={require('../Image/breakfast.jpg')} alt="no image" />
                   </div>
                   <div className="item">
-                    <img className="slide1" src={require('../Image/full_meals.jpg')} alt="Chicago" />
+                    <img className="slide1" src={require('../Image/full_meals.jpg')} alt="no image" />
                   </div>
                   <div className="item">
-                    <img className="slide1" src={require('../Image/food.jpg')} alt="New york" />
+                    <img className="slide1" src={require('../Image/food.jpg')} alt="no image" />
                   </div>
                 </div>
                 <a id="slide" class="left carousel-control" href="#myCarousel" data-slide="prev">
