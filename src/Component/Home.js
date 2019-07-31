@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import './Home.css'
 import browserHistory from '../Utils/browserHistory';
+import { connect } from 'react-redux';
+import { SEARCH } from '../Actions/SignupAction';
+import {search} from './backendFunction'
+
+
 // import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
 //   "mdbreact";
 
@@ -10,8 +15,9 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      place: ""
+      place: "abc"
     };
+    // this.state = this.state.bind(this);
   }
 
   // handlechange = (event) => {
@@ -25,8 +31,23 @@ class Home extends Component {
   handleclick = () => {
     browserHistory.push('/signin');
   }
+
+  handleChange = (e) => {
+    this.setState({ place: e.target.value });
+  }
+
   handlesubmit = () => {
-    browserHistory.push({ pathname:'/dashboard',state:{place:this.state.place}});
+    if (this.state.place) {
+      console.log(this.state.place);
+      search(this.state.place);
+      // search(this.state.place).then(res => {
+        
+        // console.log(res)
+        // browserHistory.push({ pathname:'/dashboard',state:{place:res}});
+        // browserHistory.push('/signin')
+      // })
+  
+    }
   }
 
   render() {
@@ -51,7 +72,7 @@ class Home extends Component {
               {/* <input className="ip1" type="text" name="location"></input> */}
               {/* <input className="ip2" type="text" name="search" placeholder="Search.."></input> */}
 
-              <select className="select">
+              <select className="select" onChange={this.handleChange}>
                 <option value="5d3eb95a4b6ad714873af370">Mysore</option>
                 <option value="5d3e990053d79425d96236d5">Bangalore</option>
                 <option value="5d3eb97b4b6ad714873af371">Mangalore</option>
@@ -128,4 +149,9 @@ class Home extends Component {
   }
 }
 
-export default Home;
+const mapStateToProps = (state) => {
+  // const { } = state.SearchReducer;
+  // return { };
+};
+
+export default connect(mapStateToProps, { SEARCH })(Home);

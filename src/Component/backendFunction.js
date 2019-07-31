@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { SEARCH } from '../Actions/SignupAction';
 
 export const signup = newUser => {
    debugger
@@ -30,3 +31,15 @@ export const signin = user => {
         console.log(err)
     })
 }
+
+ export const search = (id) => {
+    return function (dispatch){
+      return axios.get('getbyLocId/'+id, {}).then(res => {
+      // dispatch
+        dispatch( {
+          type: SEARCH,
+          payload: res
+        })
+      })
+    }
+   }
