@@ -32,14 +32,14 @@ export const signin = user => {
     })
 }
 
- export const search = (id) => {
-    return function (dispatch){
-      return axios.get('getbyLocId/'+id, {}).then(res => {
-      // dispatch
-        dispatch( {
-          type: SEARCH,
-          payload: res
-        })
-      })
-    }
-   }
+//  export const search = (id) => {
+//     return function (dispatch){
+//       return axios.get('getbyLocId/'+id, {}).then(res => {
+//       // dispatch
+//         // dispatch( {
+//         //   type: SEARCH,
+//         //   payload: res
+//         // })
+//       })
+//     }
+//    }

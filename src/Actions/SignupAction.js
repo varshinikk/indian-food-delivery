@@ -6,8 +6,8 @@ export function handleClick(){
       }
 }
 
-export function SEARCH(){
-    return function(dispatch){
-        dispatch({type:"SEARCH"});
-  }
-}
+// export function SEARCH(){
+//     return function(dispatch){
+//         dispatch({type:"SEARCH"});
+//   }
+// }

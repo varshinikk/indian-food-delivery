@@ -2,13 +2,8 @@ import React, { Component } from 'react';
 import './Home.css'
 import browserHistory from '../Utils/browserHistory';
 import { connect } from 'react-redux';
-import { SEARCH } from '../Actions/SignupAction';
+// import { SEARCH } from '../Actions/SignupAction';
 import {search} from './backendFunction'
-
-
-// import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
-//   "mdbreact";
-
 
 class Home extends Component {
 
@@ -20,11 +15,6 @@ class Home extends Component {
     // this.state = this.state.bind(this);
   }
 
-  // handlechange = (event) => {
-  //   this.setState({
-  //   [event.target.place]: event.target.place
-  //   });
-  // }
   handlepress = () => {
     browserHistory.push('/signup');
   }
@@ -36,18 +26,14 @@ class Home extends Component {
     this.setState({ place: e.target.value });
   }
 
-  handlesubmit = () => {
-    if (this.state.place) {
-      console.log(this.state.place);
-      search(this.state.place);
-      // search(this.state.place).then(res => {
-        
-        // console.log(res)
-        // browserHistory.push({ pathname:'/dashboard',state:{place:res}});
-        // browserHistory.push('/signin')
-      // })
-  
-    }
+  handlesubmit = (e) => {
+    debugger;
+    e.preventDefault();
+    
+    const Location={place:this.state.place};
+    console.log(Location);
+    browserHistory.push({ pathname:'/dashboard',state:{place:this.state.place}});
+    // this.props.LocationDetails(Location);
   }
 
   render() {
@@ -72,7 +58,7 @@ class Home extends Component {
               {/* <input className="ip1" type="text" name="location"></input> */}
               {/* <input className="ip2" type="text" name="search" placeholder="Search.."></input> */}
 
-              <select className="select" onChange={this.handleChange}>
+              <select className="select" onChange={this.handleChange} value={this.state.place}>
                 <option value="5d3eb95a4b6ad714873af370">Mysore</option>
                 <option value="5d3e990053d79425d96236d5">Bangalore</option>
                 <option value="5d3eb97b4b6ad714873af371">Mangalore</option>
@@ -154,4 +140,4 @@ const mapStateToProps = (state) => {
   // return { };
 };
 
-export default connect(mapStateToProps, { SEARCH })(Home);
+export default connect(mapStateToProps)(Home);

@@ -31,24 +31,21 @@ class Signin extends Component{
     signin(user).then(res => {
         browserHistory.push('/dashboard')
     })
-
-    // let temp = 0;
-    // let emailerror = this.state.email.length, pswderror = this.state.password.length;
-    // let reg1_pswd = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,15})/;
-    // let reg1_email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    
-    // if (emailerror === 0) this.setState({ emailerror: '*Email is required' });
-    // else if (!reg1_email.test(this.state.email)) this.setState({ emailerror: '*Invalid Email' });
-    // else temp++;
-
-    // if (pswderror === 0) this.setState({ pswderror: '*Password is required' });
-    // else if (!reg1_pswd.test(this.state.password)) this.setState({ pswderror: '*Invalid Password' });
-    // else temp++;
-
-    // if (temp > 3) {
-    //   browserHistory.push('/dashboard');
-    // }
   }
+
+  // handleSignin=async()=>{
+
+  //   const { email,password} = this.state;
+  //   const payload = { email,password }
+  //   await api.signin(payload).then(res => {
+  //   if(res.data==="User succesfully signIn"){
+  //   alert("login succesfull")
+  //   browserHistory.push("home");
+  //   }
+  //   else
+  //   alert("login fail");
+  //   })
+  //   }
 
   render(){
     return(
