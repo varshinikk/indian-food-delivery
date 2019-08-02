@@ -10,7 +10,7 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      place: "abc"
+      place: ""
     };
     // this.state = this.state.bind(this);
   }
