@@ -5,20 +5,14 @@ import { LocationDetails } from '../../Actions/LocationAction';
 import browserHistory from '../../utils/browserHistory';
 
 class Menu extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    }
-  }
   componentDidMount() {
     debugger;
-    this.props.LocationDetails(this.props.location.state.place);
+    this.props.RestDetails(this.props.location.state.place);
   }
   handleClick = (e, Rid) => {
     e.preventDefault();
     console.log(e.target.entry, Rid);
-    browserHistory.push({ pathname: "/menulist", state: { Rid: Rid } })
+    browserHistory.push({ pathname: "/menu", state: { Rid: Rid } })
   }
 
   render() {

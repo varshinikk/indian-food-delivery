@@ -28,7 +28,7 @@ class Dashboard extends Component {
               <div class="sidebar">
                 <a class="active" href="#">Popular Restaurants</a>
                 <a href="./Offer">Offers</a>
-                <a href="#">All Restaurants</a>
+                <a href="">All Restaurants</a>
               </div>
             </div>
 

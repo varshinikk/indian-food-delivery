@@ -13,7 +13,7 @@ class Food extends Component {
   }
   componentDidMount() {
     debugger;
-    this.props.LocationDetails(this.props.location.state.place);
+    this.props.foodDetails(this.props.location.state.place);
   }
   handleClick = (e, Rid) => {
     e.preventDefault();
