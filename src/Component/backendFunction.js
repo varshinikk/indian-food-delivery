@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { SEARCH } from '../Actions/SignupAction';
+// import { SEARCH } from '../Actions/SignupAction';
 
 export const signup = newUser => {
    debugger

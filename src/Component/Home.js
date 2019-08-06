@@ -3,16 +3,14 @@ import './Home.css'
 import browserHistory from '../Utils/browserHistory';
 import { connect } from 'react-redux';
 // import { SEARCH } from '../Actions/SignupAction';
-import {search} from './backendFunction'
+// import {search} from './backendFunction'
 
 class Home extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
       place: ""
     };
-    // this.state = this.state.bind(this);
   }
 
   handlepress = () => {
@@ -28,12 +26,10 @@ class Home extends Component {
 
   handlesubmit = (e) => {
     debugger;
-    e.preventDefault();
-    
+    e.preventDefault(); 
     const Location={place:this.state.place};
     console.log(Location);
     browserHistory.push({ pathname:'/dashboard',state:{place:this.state.place}});
-    // this.props.LocationDetails(Location);
   }
 
   render() {
@@ -41,16 +37,17 @@ class Home extends Component {
       <div id="div1">
         <div class="container">
           <div class="row">
-            <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
+            <div class="col-sm-8 col-lg-8 col-md-8 col-xs-8">
               <img className="logo" src={require('../Image/logo1.png')} alt="no image"></img>
             </div>
-            <div class="col-sm-2 col-lg-2 col-md-2 col-xs-2">
+            
+            <div class="col-sm-1 col-lg-1 col-md-1 col-xs-1">
               <button className="btn1" onClick={this.handlepress}>Signup</button>
             </div>
             <div class="col-sm-1 col-lg-1 col-md-1 col-xs-1">
               <button className="btn2" onClick={this.handleclick}>Signin</button>
-            </div>
-            <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3"></div>
+            </div> 
+            <div class="col-sm-2 col-lg-2 col-md-2 col-xs-2"></div>
           </div>
           <div class="row">
             <div id="loc" class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
@@ -59,6 +56,7 @@ class Home extends Component {
               {/* <input className="ip2" type="text" name="search" placeholder="Search.."></input> */}
 
               <select className="select" onChange={this.handleChange} value={this.state.place}>
+                <option>Select</option>
                 <option value="5d3eb95a4b6ad714873af370">Mysore</option>
                 <option value="5d3e990053d79425d96236d5">Bangalore</option>
                 <option value="5d3eb97b4b6ad714873af371">Mangalore</option>

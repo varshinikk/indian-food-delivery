@@ -26,8 +26,8 @@ export function LocationDetails(Location1) {
   return dispatch => {
 
     dispatch(BeginFunc(ActionTypes.FETCH_LOCATION_BEGIN));
-    let path="/getbyLocId/";
-    axios.get('getbyLocId/'+Location1, {})
+    let path = "/getbyLocId/";
+    axios.get('getbyLocId/' + Location1, {})
       .then(response => {
 
         dispatch(SuccessFunc(ActionTypes.FETCH_LOCATION_SUCCESS, response.data.result));
@@ -41,25 +41,24 @@ export function LocationDetails(Location1) {
     //     dispatch(ErrorFunc(ActionTypes.FETCH_LOCATION_FAILURE, error.response.data));
     //   });
 
-      
+
   };
 }
 
-export function RestDetails(rstId) {
+export function RestDetails(Rid) {
   debugger;
   return dispatch => {
 
     dispatch(BeginFunc(ActionTypes.FETCH_RST_BEGIN));
     // let path="/users/getmenulist/";
-    let path="getbyRstId/";
-    axios.get('getbyRstId/'+rstId, {})
-    // HttpWrapper('GET', `${path}${rstId}`, false, rstId)
+    let path = "getmenulist/";
+    axios.get('getmenulist/' + Rid, {})
+      // HttpWrapper('GET', `${path}${rstId}`, false, rstId)
       .then(response => {
-
         dispatch(SuccessFunc(ActionTypes.FETCH_RST_SUCCESS, response.data.result));
         console.log(response)
-        
-      })    
+
+      })
   };
 }
 // food details
@@ -68,14 +67,14 @@ export function foodDetails(menuId) {
   return dispatch => {
 
     dispatch(BeginFunc(ActionTypes.FETCH_FOOD_BEGIN));
-    let path="getmenulist/";
-    axios.get('getmenulist/'+menuId, {})
-    // HttpWrapper('GET', `${path}${menuId}`, false, menuId)
+    let path = "getfoodlist/";
+    axios.get('getfoodlist/' + menuId, {})
+      // HttpWrapper('GET', `${path}${menuId}`, false, menuId)
       .then(response => {
 
         dispatch(SuccessFunc(ActionTypes.FETCH_FOOD_SUCCESS, response.data.result));
         console.log(response)
-        
-      })    
+
+      })
   };
 }
