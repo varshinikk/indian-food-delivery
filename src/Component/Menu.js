@@ -34,8 +34,8 @@ class MenuList extends Component {
 // export default MenuList;
 const mapStateToProps = (state) => {
   debugger;
-  const {  menuarray } = state.LocationReducers;
-  return { menuarray };
+  const {error, message, menuarray } = state.LocationReducer;
+  return {error, message, menuarray };
 };
 
 export default withRouter(connect(mapStateToProps, { RestDetails })(MenuList));

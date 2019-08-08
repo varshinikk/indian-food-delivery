@@ -58,17 +58,17 @@ export function RestDetails(Rid) {
 }
 
 // food details
-// export function foodDetails(menuId) {
-//   debugger;
-//   return dispatch => {
+export function foodDetails(menuId) {
+  debugger;
+  return dispatch => {
 
-//     dispatch(BeginFunc(ActionTypes.FETCH_FOOD_BEGIN));
-//     let path = "getfoodlist/";
-//     axios.get('getfoodlist/' + menuId, {})
-//       // HttpWrapper('GET', `${path}${menuId}`, false, menuId)
-//       .then(response => {
-//         dispatch(SuccessFunc(ActionTypes.FETCH_FOOD_SUCCESS, response.data.result));
-//         console.log(response)
-//       })
-//   };
-// }
+    dispatch(BeginFunc(ActionTypes.FETCH_FOOD_BEGIN));
+    let path = "getfoodlist/";
+    axios.get('getfoodlist/' + menuId, {})
+      // HttpWrapper('GET', `${path}${menuId}`, false, menuId)
+      .then(response => {
+        dispatch(SuccessFunc(ActionTypes.FETCH_FOOD_SUCCESS, response.data.result));
+        console.log(response)
+      })
+  };
+}

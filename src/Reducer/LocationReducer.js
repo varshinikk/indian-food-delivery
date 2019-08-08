@@ -25,12 +25,12 @@ export default (state = intialState, action) => {
       return { ...state, loading: true, error: null };
     case ActionTypes.FETCH_RST_SUCCESS:
       return { ...state, loading: false, menuarray: action.payload };
-// console.log(this.state.menuarray)
+
     // food
-    // case ActionTypes.FETCH_FOOD_BEGIN:
-    //   return { ...state, loading: true, error: null };
-    // case ActionTypes.FETCH_FOOD_SUCCESS:
-    //   return { ...state, loading: false, foodarray: action.payload };
+    case ActionTypes.FETCH_FOOD_BEGIN:
+      return { ...state, loading: true, error: null };
+    case ActionTypes.FETCH_FOOD_SUCCESS:
+      return { ...state, loading: false, foodarray: action.payload };
     default:
       return state;
   }
