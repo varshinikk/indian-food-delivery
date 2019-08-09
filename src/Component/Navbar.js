@@ -35,6 +35,9 @@ class Navbar extends Component {
                     <li class="nav-item">
                         <a class="nav-link" href="./Cart">Cart</a>
                     </li>
+                    <li class="nav-item">
+                        <a id="logout" class="nav-link" href="./">Logout</a>
+                    </li>
                 </ul>
             </div>
             </nav>

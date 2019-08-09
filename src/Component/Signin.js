@@ -34,17 +34,17 @@ class Signin extends Component{
   }
 
   // handleSignin=async()=>{
-
   //   const { email,password} = this.state;
   //   const payload = { email,password }
-  //   await api.signin(payload).then(res => {
-  //   if(res.data==="User succesfully signIn"){
-  //   alert("login succesfull")
-  //   browserHistory.push("home");
-  //   }
-  //   else
-  //   alert("login fail");
-  //   })
+  //   const signinRes = await api.signin(payload)
+  //   // sessionStorage.setItem('authentication', signinRes.data.token)
+  //   // sessionStorage.setItem('userEmail', signinRes.data.email)
+  //   // .then(res => {
+  //   // const token = res.data.token;
+  //   // localStorage.setItem('jwtToken',token);
+  //   // setAuthorizationToken(token);
+  //   // })
+  //   browserHistory.push("/title");
   //   }
 
   render(){

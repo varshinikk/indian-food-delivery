@@ -7,15 +7,6 @@ import { connect } from 'react-redux';
 import browserHistory from '../Utils/browserHistory';
 
 class Dashboard extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     rest: ""
-  //   };
-  // }
-  // handleChange = (e) => {
-  //   this.setState({ rest: e.target.value });
-  // }
   handlesubmit = (e, Rid) => {
     debugger;
     e.preventDefault();
@@ -52,17 +43,56 @@ class Dashboard extends Component {
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
               <div class="card" >
                 <div class="card-body">
-                {/* <div class="card-body" onChange={this.handleChange} value={this.state.rest}> */}
-                  {this.props.Rstarray.map((item, index) => (
+                  {this.props.Rstarray.map((item, index) => {
+                  if(item.RName === "Infint"){
+                    return(
+                  
                     <div className="rest1" key={item.index} variant={"button-data-card-div"} entry={index} content={"More"} onClick={(e)=>this.handlesubmit(e,item._id)}>
                       <p>{item.RImg}</p>
                       <p>{item.RName}</p>
                       <p>Delivery Charge : {item.DeliveryCharge}</p>
-                    </div>
-                  ))}
+                    </div> )}
+                  })}
                 </div>
               </div>
-            </div>
+              </div>
+
+              <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+              <div class="card" >
+                <div class="card-body">
+                  {this.props.Rstarray.map((item, index) => {
+                  if(item.RName === "Frosting"){
+                    return(
+                  
+                    <div className="rest1" key={item.index} variant={"button-data-card-div"} entry={index} content={"More"} onClick={(e)=>this.handlesubmit(e,item._id)}>
+                      <p>{item.RImg}</p>
+                      <p>{item.RName}</p>
+                      <p>Delivery Charge : {item.DeliveryCharge}</p>
+                    </div> )}
+                  })}
+                </div>
+              </div>
+              </div>
+
+              <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+              <div class="card" >
+                <div class="card-body">
+                  {this.props.Rstarray.map((item, index) => {
+                  if(item.RName === "Oyster Bay" || item.RName === "Tiamo"){
+                    return(
+                  
+                    <div className="rest1" key={item.index} variant={"button-data-card-div"} entry={index} content={"More"} onClick={(e)=>this.handlesubmit(e,item._id)}>
+                      <p>{item.RImg}</p>
+                      <p>{item.RName}</p>
+                      <p>Delivery Charge : {item.DeliveryCharge}</p>
+                    </div> )}
+                  })}
+                </div>
+              </div>
+              </div>
+
+
+            
           </div>
         </div>
       </div>
@@ -78,3 +108,37 @@ const mapStateToProps = (state) => {
 
 // export default RstDetails;
 export default withRouter(connect(mapStateToProps, { LocationDetails })(Dashboard));
+
+
+
+// {
+//   let itemList = this.state.Products.map(item=>{
+//   return(
+//   <div className="card1" key={item.id}> 
+//   <div className="card-content">
+//   <b>Product Name:</b><span className="card-titl">{item.Product_Name}</span>
+//   <br></br>
+//   <p><b>Details:</b>{item.Product_Discription}</p>
+//   <p><b>Price:</b> {item.Product_Price}Rs</p>
+//   <Button color="primary" onClick={this.AddCart.bind(this, item._id)}>Add to Cart</Button>
+//   </div>
+//   </div>
+//   )
+  
+//   })
+  
+//   return(
+//   <div>
+//   <h3 >Our items</h3>
+//   <Navbar1/>
+//   <Product_Navbar/>
+//   <h3 className="page_head" ><b>Our items</b></h3> 
+//   <div className="containe"> 
+//   <br></br>
+//   <div className="box1">
+//   {itemList}
+  
+//   </div>
+//   </div>
+//   </div>
+//   )

@@ -58,13 +58,13 @@ export function RestDetails(Rid) {
 }
 
 // food details
-export function foodDetails(menuId) {
+export function foodDetails(menuid) {
   debugger;
   return dispatch => {
 
     dispatch(BeginFunc(ActionTypes.FETCH_FOOD_BEGIN));
     let path = "getfoodlist/";
-    axios.get('getfoodlist/' + menuId, {})
+    axios.get('getfoodlist/' + menuid, {})
       // HttpWrapper('GET', `${path}${menuId}`, false, menuId)
       .then(response => {
         dispatch(SuccessFunc(ActionTypes.FETCH_FOOD_SUCCESS, response.data.result));
