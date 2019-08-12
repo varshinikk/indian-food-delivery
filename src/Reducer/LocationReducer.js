@@ -10,7 +10,7 @@ const intialState = {
 };
 
 export default (state = intialState, action) => {
-  debugger;
+  // debugger;
   switch (action.type) {
     case ActionTypes.FETCH_LOCATION_BEGIN:
       return { ...state, loading: true, error: null };
@@ -21,7 +21,7 @@ export default (state = intialState, action) => {
 
     // rst
     case ActionTypes.FETCH_RST_BEGIN:
-      debugger;
+      // debugger;
       return { ...state, loading: true, error: null };
     case ActionTypes.FETCH_RST_SUCCESS:
       return { ...state, loading: false, menuarray: action.payload };

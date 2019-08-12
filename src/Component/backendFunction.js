@@ -31,6 +31,38 @@ export const signin = user => {
         console.log(err)
     })
 }
+export const addTocart = cart => {
+    debugger
+     return axios
+     .post('addcart', {
+        
+         food_name: cart.food_name,
+         price: cart.price,
+         quantity: cart.quantity,
+         total_price: cart.total_price
+     })
+     .then(res => {
+         console.log('registered successfully')
+     })
+ }
+
+
+const getcart = get => {
+    debugger
+     return axios
+     .get('getcart')
+    //  .get('getcart', {
+        
+    //      name: newUser.name,
+    //      phone_number: newUser.phone_number,
+    //      email: newUser.email,
+    //      password: newUser.password
+    //  })
+     .then(res => {
+         console.log('registered successfully')
+     })
+ }
+
 
 //  export const search = (id) => {
 //     return function (dispatch){

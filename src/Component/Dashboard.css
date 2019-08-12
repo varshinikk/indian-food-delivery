@@ -36,7 +36,20 @@
 {
     height: 225px;
 }
-.hotel1
+.card1
+{
+    height: 124px;
+}
+.name
+{
+    font-size: 18px;
+}
+.charge
+{
+    font-size: 16px;
+    color: #839192;
+}
+/* .hotel1
 {
     height: 181px;
     width: 224px;
@@ -45,11 +58,11 @@
 {
     height: 181px;
     width: 224px;
-}
-.card1, .div6
+} */ 
+/* .card1, .div6
 {
     margin-top: 35px;
-}
+} */
 .nav
 {
     height: 114px;

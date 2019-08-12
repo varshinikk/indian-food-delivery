@@ -72,3 +72,20 @@ export function foodDetails(menuid) {
       })
   };
 }
+
+
+
+// export function cartDetails() {
+//   debugger;
+//   return dispatch => {
+
+//     dispatch(BeginFunc(ActionTypes.FETCH_FOOD_BEGIN));
+//     let path = "getfoodlist/";
+//     axios.get('getfoodlist/' + menuid, {})
+//       // HttpWrapper('GET', `${path}${menuId}`, false, menuId)
+//       .then(response => {
+//         dispatch(SuccessFunc(ActionTypes.FETCH_FOOD_SUCCESS, response.data.result));
+//         console.log(response)
+//       })
+//   };
+// }

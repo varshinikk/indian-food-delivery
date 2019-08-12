@@ -31,26 +31,70 @@ class Dashboard extends Component {
               <Navbar />
             </div>
           </div>
+
+          <div id="pop">
           <div class="row">
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3 div5">
               <div class="sidebar">
-                <a class="active" href="#">Popular Restaurants</a>
+                <a class="active" href="#pop">Popular Restaurants</a>
                 <a href="./Offer">Offers</a>
-                <a href="">All Restaurants</a>
+                <a href="#allrest">All Restaurants</a>
               </div>
             </div>
+
+            
+
+            <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+              <div class="card card1" >
+                <div class="card-body card4">
+                  {this.props.Rstarray.map((item, index) => {
+                  if(item.RName === "Infint" || item.RName === "The Royal Afghan" || item.RName === "Sannadige"){
+                    return(
+                    <div className="rest1" key={item.index} variant={"button-data-card-div"} entry={index} content={"More"} onClick={(e)=>this.handlesubmit(e,item._id)}>
+                      {/* <p className="name">{item.RImg}</p> */}
+                      <center><p className="name">{item.RName}</p></center>
+                      <center><p className="charge">Delivery Charge : {item.DeliveryCharge}</p></center>
+                    </div> )}
+                  })}
+                </div>
+              </div>
+              </div>
+
+              <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+              <div class="card" >
+                <div class="card-body bodycolor">
+                  {this.props.Rstarray.map((item, index) => {
+                  if(item.RName === "Frosting" || item.RName === "Tiamo" || item.RName === "Gajalee Sea Food"){
+                    return(
+                    <div className="rest1" key={item.index} variant={"button-data-card-div"} entry={index} content={"More"} onClick={(e)=>this.handlesubmit(e,item._id)}>
+                      {/* <p>{item.RImg}</p> */}
+                      <center><p className="name">{item.RName}</p></center>
+                      <center><p className="charge">Delivery Charge : {item.DeliveryCharge}</p></center>
+                    </div> )}
+                  })}
+                </div>
+              </div>
+              </div>
+
+              <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3"></div>  
+
+          </div>
+          </div>
+
+          <div id="allrest">
+          <div class="row">
+            <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3"></div>
 
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
               <div class="card" >
                 <div class="card-body">
                   {this.props.Rstarray.map((item, index) => {
-                  if(item.RName === "Infint"){
+                  if(item.RName === "Oyster Bay" || item.RName === "Saffron" || item.RName === "Diesel Cafe"){
                     return(
-                  
                     <div className="rest1" key={item.index} variant={"button-data-card-div"} entry={index} content={"More"} onClick={(e)=>this.handlesubmit(e,item._id)}>
-                      <p>{item.RImg}</p>
-                      <p>{item.RName}</p>
-                      <p>Delivery Charge : {item.DeliveryCharge}</p>
+                      {/* <p>{item.RImg}</p> */}
+                      <center><p className="name">{item.RName}</p></center>
+                      <center><p className="charge">Delivery Charge : {item.DeliveryCharge}</p></center>
                     </div> )}
                   })}
                 </div>
@@ -61,13 +105,12 @@ class Dashboard extends Component {
               <div class="card" >
                 <div class="card-body">
                   {this.props.Rstarray.map((item, index) => {
-                  if(item.RName === "Frosting"){
+                  if(item.RName === "By The Blue" || item.RName === "Ottimo" || item.RName === "Cardamom"){
                     return(
-                  
                     <div className="rest1" key={item.index} variant={"button-data-card-div"} entry={index} content={"More"} onClick={(e)=>this.handlesubmit(e,item._id)}>
-                      <p>{item.RImg}</p>
-                      <p>{item.RName}</p>
-                      <p>Delivery Charge : {item.DeliveryCharge}</p>
+                      {/* <p>{item.RImg}</p> */}
+                      <center><p className="name">{item.RName}</p></center>
+                      <center><p className="charge">Delivery Charge : {item.DeliveryCharge}</p></center>
                     </div> )}
                   })}
                 </div>
@@ -78,13 +121,12 @@ class Dashboard extends Component {
               <div class="card" >
                 <div class="card-body">
                   {this.props.Rstarray.map((item, index) => {
-                  if(item.RName === "Oyster Bay" || item.RName === "Tiamo"){
+                  if(item.RName === "The Old House" || item.RName === "Karavalli" || item.RName === "Smoky The Sheesha Lounge"){
                     return(
-                  
                     <div className="rest1" key={item.index} variant={"button-data-card-div"} entry={index} content={"More"} onClick={(e)=>this.handlesubmit(e,item._id)}>
-                      <p>{item.RImg}</p>
-                      <p>{item.RName}</p>
-                      <p>Delivery Charge : {item.DeliveryCharge}</p>
+                      {/* <p>{item.RImg}</p> */}
+                      <center><p className="name">{item.RName}</p></center>
+                      <center><p className="charge">Delivery Charge : {item.DeliveryCharge}</p></center>
                     </div> )}
                   })}
                 </div>
@@ -92,7 +134,8 @@ class Dashboard extends Component {
               </div>
 
 
-            
+          </div>
+
           </div>
         </div>
       </div>
@@ -108,37 +151,3 @@ const mapStateToProps = (state) => {
 
 // export default RstDetails;
 export default withRouter(connect(mapStateToProps, { LocationDetails })(Dashboard));
-
-
-
-// {
-//   let itemList = this.state.Products.map(item=>{
-//   return(
-//   <div className="card1" key={item.id}> 
-//   <div className="card-content">
-//   <b>Product Name:</b><span className="card-titl">{item.Product_Name}</span>
-//   <br></br>
-//   <p><b>Details:</b>{item.Product_Discription}</p>
-//   <p><b>Price:</b> {item.Product_Price}Rs</p>
-//   <Button color="primary" onClick={this.AddCart.bind(this, item._id)}>Add to Cart</Button>
-//   </div>
-//   </div>
-//   )
-  
-//   })
-  
-//   return(
-//   <div>
-//   <h3 >Our items</h3>
-//   <Navbar1/>
-//   <Product_Navbar/>
-//   <h3 className="page_head" ><b>Our items</b></h3> 
-//   <div className="containe"> 
-//   <br></br>
-//   <div className="box1">
-//   {itemList}
-  
-//   </div>
-//   </div>
-//   </div>
-//   )

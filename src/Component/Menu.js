@@ -36,9 +36,9 @@ class MenuList extends Component {
           </div>
         ))}
       </div>
-      {/* <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-        <Food />
-      </div> */}
+      <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+        <Food/>
+      </div>
       </div>
       </div>
       </div>
