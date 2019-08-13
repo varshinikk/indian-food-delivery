@@ -34,10 +34,11 @@ class Food extends Component {
     return (
       <div>
         <Navbar />
+        <h2>Food Items</h2>
         {this.props.foodarray.map((item, index) => (
           <div key={item.index} variant={"button-data-card-div"} entry={index} content={"More"}>
-            <p>{item.foodName}</p>
-            <p>{item.cost}</p>
+            <p className="fname">{item.foodName}</p>
+            <p className="fcost">{item.cost}</p>
             <button onClick={this.AddCart.bind(this, item._id)}>ADD</button><br></br>
           </div>
         ))}

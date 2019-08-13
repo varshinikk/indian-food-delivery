@@ -47,31 +47,18 @@ export const addTocart = cart => {
  }
 
 
-const getcart = get => {
-    debugger
-     return axios
-     .get('getcart')
-    //  .get('getcart', {
+// const getcart = get => {
+//     debugger
+//      return axios
+//      .get('getcart')
+//     //  .get('getcart', {
         
-    //      name: newUser.name,
-    //      phone_number: newUser.phone_number,
-    //      email: newUser.email,
-    //      password: newUser.password
-    //  })
-     .then(res => {
-         console.log('registered successfully')
-     })
- }
-
-
-//  export const search = (id) => {
-//     return function (dispatch){
-//       return axios.get('getbyLocId/'+id, {}).then(res => {
-//       // dispatch
-//         // dispatch( {
-//         //   type: SEARCH,
-//         //   payload: res
-//         // })
-//       })
-//     }
-//    }
+//     //      name: newUser.name,
+//     //      phone_number: newUser.phone_number,
+//     //      email: newUser.email,
+//     //      password: newUser.password
+//     //  })
+//      .then(res => {
+//          console.log('registered successfully')
+//      })
+//  }

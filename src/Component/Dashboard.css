@@ -5,6 +5,14 @@
     background-size: cover;
     height: 700px;
 }
+.menu
+{
+    font-size: 22px;
+}
+.menulist
+{
+    font-size: 30px;
+}
 /* #mySidenav a
 {
     position: absolute;

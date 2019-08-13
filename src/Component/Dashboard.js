@@ -41,9 +41,6 @@ class Dashboard extends Component {
                 <a href="#allrest">All Restaurants</a>
               </div>
             </div>
-
-            
-
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
               <div class="card card1" >
                 <div class="card-body card4">
@@ -75,16 +72,12 @@ class Dashboard extends Component {
                 </div>
               </div>
               </div>
-
               <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3"></div>  
-
           </div>
           </div>
-
           <div id="allrest">
           <div class="row">
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3"></div>
-
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
               <div class="card" >
                 <div class="card-body">
@@ -100,7 +93,6 @@ class Dashboard extends Component {
                 </div>
               </div>
               </div>
-
               <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
               <div class="card" >
                 <div class="card-body">
@@ -116,7 +108,6 @@ class Dashboard extends Component {
                 </div>
               </div>
               </div>
-
               <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
               <div class="card" >
                 <div class="card-body">
@@ -132,10 +123,7 @@ class Dashboard extends Component {
                 </div>
               </div>
               </div>
-
-
           </div>
-
           </div>
         </div>
       </div>

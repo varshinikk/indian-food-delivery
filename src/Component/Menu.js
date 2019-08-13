@@ -5,8 +5,15 @@ import Navbar from './Navbar';
 import { RestDetails} from '../Actions/LocationAction';
 import browserHistory from '../Utils/browserHistory';
 import Food from './Food';
+import './Dashboard.css'
 
 class MenuList extends Component {
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+  //     menuid:""
+  //   }
+  // }
   componentDidMount() {
     debugger;
     this.props.RestDetails(this.props.location.state.Rid);
@@ -15,7 +22,7 @@ class MenuList extends Component {
     e.preventDefault();
     console.log(e.target.entry, menuid);
     browserHistory.push({
-      pathname: "food",state: { menuid: menuid }
+      pathname: "./menu",state: { menuid: menuid }
     });
   }
 
@@ -30,9 +37,10 @@ class MenuList extends Component {
       </div>
       <div class="row">
       <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+      <b><h2 className="menulist">MenuList</h2></b>
         {this.props.menuarray.map((item, index) => (
           <div key={item.index} onClick={(e) => this.handleClick(e, item._id)}>
-            <p>{item.menuName}</p>
+            <p className="menu">{item.menuName}</p>
           </div>
         ))}
       </div>

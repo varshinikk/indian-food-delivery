@@ -13,7 +13,6 @@ import Restaurant from './Component/Restaurant';
 import Hotel1 from './Component/Hotel1';
 import Menu from './Component/Menu';
 import Food from './Component/Food';
-import Dashboard1 from './Component/Dashboard1';
 import Cart from './Component/Cart';
 
 function App() {
@@ -33,7 +32,6 @@ function App() {
           <Route exact path="/restaurant" component={Restaurant}></Route>
           <Route exact path="/menu" component={Menu}></Route>
           <Route exact path="/food" component={Food}></Route>
-          <Route exact path="/dashboard1" component={Dashboard1}></Route>
           <Route exact path="/cart" component={Cart}></Route>
         </switch>
       </Router>

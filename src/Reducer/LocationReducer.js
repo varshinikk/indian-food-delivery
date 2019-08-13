@@ -6,7 +6,8 @@ const intialState = {
   message: '',
   Rstarray: [],
   menuarray: [],
-  foodarray: []
+  foodarray: [],
+  cartarray:[]
 };
 
 export default (state = intialState, action) => {
@@ -31,6 +32,9 @@ export default (state = intialState, action) => {
       return { ...state, loading: true, error: null };
     case ActionTypes.FETCH_FOOD_SUCCESS:
       return { ...state, loading: false, foodarray: action.payload };
+      case ActionTypes.FETCH_CARD_SUCCES:
+        debugger;
+          return { ...state, loading: false, cartarray:action.payload};
     default:
       return state;
   }
