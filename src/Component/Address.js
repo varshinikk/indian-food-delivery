@@ -4,6 +4,9 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 
 class Address extends Component {
+  addresssubmit = (e) => {
+    alert("Order Placed")
+  }
   render() {
     return (
       <div id="div7">
@@ -21,7 +24,7 @@ class Address extends Component {
               <input className="ip11" type="text" name="number"></input><br></br><br></br>
               <label className="label14"><b>Landmark</b></label>
               <input className="ip12" type="text" name="landmark"></input><br></br><br></br>
-              <center><button className="btn5">Submit</button></center>
+              <center><button className="btn5" onClick={this.addresssubmit}>Submit</button></center>
             </div>
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3"></div>
           </div>
