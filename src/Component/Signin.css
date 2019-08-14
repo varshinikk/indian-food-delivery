@@ -2,7 +2,7 @@
 {
     background-image: url("../Image/back4.jpg");
     background-size: cover;
-    height: 640px;
+    height: 610px;
 }
 .heading2
 {
@@ -51,4 +51,8 @@
 .signin
 {
     margin-top: 81px;
+}
+.footerdiv
+{
+    margin-top: 70px;
 }

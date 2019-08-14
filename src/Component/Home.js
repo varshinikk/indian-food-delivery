@@ -26,10 +26,10 @@ class Home extends Component {
 
   handlesubmit = (e) => {
     debugger;
-    e.preventDefault(); 
-    const Location={place:this.state.place};
+    e.preventDefault();
+    const Location = { place: this.state.place };
     console.log(Location);
-    browserHistory.push({ pathname:'/dashboard',state:{place:this.state.place}});
+    browserHistory.push({ pathname: '/dashboard', state: { place: this.state.place } });
   }
 
   render() {
@@ -40,13 +40,13 @@ class Home extends Component {
             <div class="col-sm-8 col-lg-8 col-md-8 col-xs-8">
               <img className="logo" src={require('../Image/logo1.png')} alt="no image"></img>
             </div>
-            
+
             <div class="col-sm-1 col-lg-1 col-md-1 col-xs-1">
               <button className="btn1" onClick={this.handlepress}>Signup</button>
             </div>
             <div class="col-sm-1 col-lg-1 col-md-1 col-xs-1">
               <button className="btn2" onClick={this.handleclick}>Signin</button>
-            </div> 
+            </div>
             <div class="col-sm-2 col-lg-2 col-md-2 col-xs-2"></div>
           </div>
           <div class="row">

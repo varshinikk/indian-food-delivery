@@ -3,43 +3,33 @@
     background-color: #FAE5D3;
     background-image: url("../Image/back1.jpg");
     background-size: cover;
-    height: 700px;
+    height: 600px;
 }
 .menu
 {
     font-size: 22px;
+    margin-left: 60px;
 }
 .menulist
 {
-    font-size: 30px;
+    font-size: 40px;
+    color: #4CAF50;
 }
-/* #mySidenav a
+.menudiv
 {
-    position: absolute;
-    padding: 15px;
-    width: 213px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    border-radius: 0 5px 5px 0;
-} */
-/* #restaurants
-{
-    background-color: #BB8FCE;
-    width: 213px;
+    margin-top: 90px;
 }
-#offer 
+#menudiv4
 {
-    top:70px;
-    background-color: #BB8FCE;
-    width: 213px;
-}  
-#all
+    background-color: #FAE5D3;
+    background-image: url("../Image/back1.jpg");
+    background-size: cover;
+    height: 580px;
+}
+.menufooter
 {
-    top: 140px;
-    background-color: #BB8FCE;
-    width: 213px;
-} */
+    margin-top: 190px;
+}
 .div5
 {
     height: 225px;
@@ -57,20 +47,6 @@
     font-size: 16px;
     color: #839192;
 }
-/* .hotel1
-{
-    height: 181px;
-    width: 224px;
-} 
-.hotel4
-{
-    height: 181px;
-    width: 224px;
-} */ 
-/* .card1, .div6
-{
-    margin-top: 35px;
-} */
 .nav
 {
     height: 114px;
@@ -137,4 +113,8 @@ div.content
 .rest1
 {
     height: 87px;
+}
+.dashfooter
+{
+    margin-top: 100px;
 }

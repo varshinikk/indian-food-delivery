@@ -1,0 +1,99 @@
+#fooddiv4
+{
+    background-color: #FAE5D3;
+    height: 1600px;
+}
+.foodlist
+{
+    font-size: 40px;
+    color: #4CAF50;
+}
+.fname
+{
+    font-size: 22px;
+    margin-top: 18px;
+}
+.fcost
+{
+    font-size: 22px;
+}
+.fbtn
+{
+    border: 1px solid green;
+    border-radius: 8px;
+    width: 57px;
+    height: 35px;
+    font-size: 17px;
+    background-color: green;
+    color: white;
+}
+#cartdiv4
+{
+    background-color: #FAE5D3;
+}
+.cartitems
+{
+    font-size: 40px;
+    color: #4CAF50;
+}
+.cname
+{
+    font-size: 22px;
+    margin-top: 18px;
+}
+.cprice
+{
+    font-size: 22px;
+    margin-top: 18px;
+}
+.cquantity
+{
+    font-size: 22px;
+    margin-top: 18px;
+}
+.ctotal
+{
+    font-size: 22px;
+    margin-top: 18px;
+}
+.cbtn1
+{
+    border: 1px solid #7DCEA0;
+    border-radius: 8px;
+    width: 32px;
+    height: 29px;
+    font-size: 17px;
+    background-color: #7DCEA0;
+    color: white;
+}
+.cbtn2
+{
+    border: 1px solid #7DCEA0;
+    border-radius: 8px;
+    width: 32px;
+    height: 29px;
+    font-size: 17px;
+    background-color: #7DCEA0;
+    color: white;
+}
+.cbtn3
+{
+    border: 1px solid red;
+    border-radius: 8px;
+    width: 91px;
+    height: 35px;
+    font-size: 17px;
+    background-color: red;
+    color: white;
+}
+.cbtn4
+{
+    border: 1px solid green;
+    border-radius: 8px;
+    width: 118px;
+    margin-top: 30px;
+    height: 35px;
+    font-size: 17px;
+    background-color: green;
+    color: white;
+}

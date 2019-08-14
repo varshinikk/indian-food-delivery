@@ -3,7 +3,6 @@
     background-color: #FAE5D3;
     background-image: url("../Image/back1.jpg");
     background-size: cover;
-    /* background-color: #F7DC6F; */
 }
 .logo
 {
@@ -23,7 +22,6 @@
     margin-top: 31px;
     background-color:darkgreen;
     color: white;
-    /* box-shadow: 2px 2px 2px 2px; */
 }
 .btn2
 {
@@ -42,15 +40,6 @@
     font-size: 35px;
     color: darkgreen;
 }
-/* .ip1
-{
-    margin-top: 35px;
-    margin-left: 17px;
-    height: 38px;
-    width: 240px;
-    border: 1px solid darkgreen;
-    border-radius: 12px;
-} */
 .ip2
 {
     margin-top: 35px;
@@ -97,18 +86,6 @@
     width: 250px;
     border: 1px solid #d81563;
 }
-/* .pic7, .pic8, .pic9
-{
-    height: 117px;
-    width: 205px;
-    margin-top: 35px;
-} */
-/* .pic4
-{
-    margin-top: 35px;
-    height: 50%;
-    width: 100%;
-} */
 .dropdown 
 {
 	position: relative;
@@ -144,7 +121,6 @@
 }
 #slide
 {
-    /* background-color: #F7DC6F; */
     margin-top: 35px;
 }
 .select

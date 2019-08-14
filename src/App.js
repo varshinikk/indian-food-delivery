@@ -9,8 +9,7 @@ import Dashboard from './Component/Dashboard';
 import Offer from './Component/Offer';
 import Address from './Component/Address';
 import Footer from './Component/Footer';
-import Restaurant from './Component/Restaurant';
-import Hotel1 from './Component/Hotel1';
+// import Restaurant from './Component/Restaurant';
 import Menu from './Component/Menu';
 import Food from './Component/Food';
 import Cart from './Component/Cart';
@@ -29,7 +28,7 @@ function App() {
           <Route exact path="/offer" component={Offer}></Route>
           <Route exact path="/address" component={Address}></Route>
           <Route exact path="/footer" component={Footer}></Route>
-          <Route exact path="/restaurant" component={Restaurant}></Route>
+          {/* <Route exact path="/restaurant" component={Restaurant}></Route> */}
           <Route exact path="/menu" component={Menu}></Route>
           <Route exact path="/food" component={Food}></Route>
           <Route exact path="/cart" component={Cart}></Route>

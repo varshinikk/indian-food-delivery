@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import './Signup.css'
 import { connect } from 'react-redux';
-import {signup} from './backendFunction'
+import { signup } from './backendFunction'
 import { handleClick } from '../Actions/SignupAction';
 import browserHistory from '../Utils/browserHistory';
- 
+import Navbar from './Navbar';
+import Footer from './Footer';
+
 class Signup extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name:"",
-      phone_number:"",
+      name: "",
+      phone_number: "",
       email: "",
       password: "",
       nerr: "",
@@ -21,11 +23,11 @@ class Signup extends Component {
   }
   handlechange = (event) => {
     this.setState({
-    [event.target.name]: event.target.value
+      [event.target.name]: event.target.value
     });
   }
 
-  handleSubmit= (event) =>{
+  handleSubmit = (event) => {
     debugger;
     event.preventDefault();
     const user = {
@@ -39,7 +41,6 @@ class Signup extends Component {
       // browserHistory.push('/signin')
     })
 
-  // }
     let temp1 = 0;
     let nerr = this.state.name.length, emailerr = this.state.email.length, phn = this.state.phone_number.length, pswd = this.state.password.length;
     let reg_name = /^[A-Za-z]{2,10}$/;
@@ -71,6 +72,11 @@ class Signup extends Component {
     return (
       <div id="box1">
         <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12 nav">
+              <Navbar />
+            </div>
+          </div>
           <div class="row signup">
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3"></div>
             <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
@@ -92,9 +98,10 @@ class Signup extends Component {
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3"></div>
           </div>
         </div>
+        <Footer />
       </div>
     );
-  } 
+  }
 }
 const mapStateToProps = (state) => {
   const { name, phone_number, email, password } = state.SignupReducer;
